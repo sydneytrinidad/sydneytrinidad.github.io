@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css2?family=Comforter&family=Libre+Baskerville&family=Source+Serif+Pro&display=swap);
+
+body {
+    color: #999;
+    font: 12pt "Tahoma";
+    line-height: 150% !important;
+    text-align: center
+    }
+
+h1, h2, h3 {
+    font: 36pt "Comforter";
+}
+
+footer {
+    color: #b784a7;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Cinzel Decorative', Tahoma, sans-serif;
+  }  
