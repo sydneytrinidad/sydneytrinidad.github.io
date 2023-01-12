@@ -1,19 +1,77 @@
-@import url(https://fonts.googleapis.com/css2?family=Comforter&family=Libre+Baskerville&family=Source+Serif+Pro&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Comforter&family=Libre+Baskerville&family=Source+Serif+Pro&family=Arsenal&display=swap);
 
 body {
-    color: #999;
-    font: 12pt "Tahoma";
-    line-height: 150% !important;
-    text-align: center
-    }
+    background: white;
+    color: #301800;
+    font-family: "Libre Baskerville", "Bitstream Charter", "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: grey;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+a:hover {
+    color: #b784a7;
+  }
 
 h1, h2, h3 {
-    font: 36pt "Comforter";
+    font: 25pt "Source Serif Pro";
+    float: center;
+}
+
+header .title {
+    float: left;
+    font-family: 'Source Serif Pro', Tahoma, sans-serif;
+    font-size: 225%;
+    color: #d0c8c0;
+    padding: 0.45em 0;
+    margin-left: -0.05em;
+}
+
+header .nav {
+    float: right;
+    list-style-type: none;
+    font-size: 80%;
+    margin-top: 2.8em;
+}
+
+header .nav a {
+    padding: 14px 25px;
+}
+
+.nav {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.content {
+    margin: 0 auto 2em;
+    max-width: 600px;
+    clear: both;
+    position: relative;
+    color: #292929;
+    overflow: hidden;
+}
+
+header.post-header {
+    text-align: center;
 }
 
 footer {
     color: #b784a7;
     font-size: 20px;
     text-align: center;
-    font-family: 'Cinzel Decorative', Tahoma, sans-serif;
-  }  
+    font-family: 'Source Serif Pro', Tahoma, sans-serif;
+  } 
