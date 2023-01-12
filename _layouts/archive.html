@@ -1,0 +1,37 @@
+{% include header.html %}
+
+<div id="archive">
+    <ul>
+      {% for post in site.posts %}
+      <hr></hr>
+      <div>
+        <p class='post-title' align='center'><a href="{{ post.url }}">{{ post.title }}</a></p>
+      </div>
+      <p class="desc">
+      {% assign total_paragraphs = post.content | split: '<p>' | size | minus: 1 %}
+      {% assign excerpt_paragraphs = post.excerpt | split: '<p>' | size | minus: 1 %}
+      {% assign remaining_paragraphs = total_paragraphs | minus: excerpt_paragraphs %}
+      {{ post.content | split: '</p>' | first }}
+      </p>
+      <p align='center'><a href="{{ post.url }}">
+      {% if remaining_paragraphs > 0 %}
+      Read {{ remaining_paragraphs }} remaining paragraphs...
+      {% else %}
+      View post on separate page
+      {% endif %}
+      </a></p>
+      {% endfor %}
+    </ul>
+     </div>
+
+  <div id="paginator">
+    {% if paginator.page > 1 %}
+    <a href="/page{{ paginator.previous_page }}">back</a>
+    {% endif %}
+
+    {% if paginator.page < paginator.total_pages %}
+    <a href="/page{{ paginator.next_page }}">next</a>
+    {% endif %}
+  </div>
+
+  {% include footer.html %}
