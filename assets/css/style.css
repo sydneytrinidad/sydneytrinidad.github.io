@@ -10,6 +10,13 @@ body {
     max-width: 1000px;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
 a:link, a:visited, a:hover, a:active {
     color: grey;
     text-align: center;

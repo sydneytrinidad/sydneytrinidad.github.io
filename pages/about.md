@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="/assets/img/me.png" style="height: 300px;"/>
+<img src="/assets/img/me.png" class="center" style="height: 300px;"/>
 
 Hi, my name is Sydney! I currently work as a machine learning engineer at <a href="https://www.realtor.com/">Realtor.com</a>. In a past life (under my maiden name, Sydney Maples) I worked as a backend platform engineer at <a href="https://www.anaconda.com/">Anaconda, Inc.</a>. Before that, I was a student at Stanford University, where I served as the president of the <a href="https://symsys.stanford.edu/about/history-program/barwise-award-distinguished-contributions-symbolic-systems">Symbolic Systems Society</a> and graduated with my degree in <a href="http://www.symsyssociety.org/whatissymsys">Symbolic Systems</a> in 2018. I was also the photography director of <a href="https://issuu.com/mint_magazine">Mint Magazine</a> from its inception in 2013 until my graduation, as well as the technical team leader of the CS + Mental Health initiative, where several neat projects were conceptualized and created, including <a href="https://woebothealth.com/">Woebot</a>!
 
