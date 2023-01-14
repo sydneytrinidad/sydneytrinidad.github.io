@@ -29,8 +29,8 @@ a:hover {
   }
 
 h1, h2, h3 {
-    font: 25pt "Source Serif Pro";
-    float: center;
+    font: "Source Serif Pro";
+    text-align: center;
 }
 
 li {
@@ -68,11 +68,14 @@ header .nav a {
 
 .content, #archive {
     margin: 0 auto 2em;
-    max-width: 600px;
     clear: both;
     position: relative;
     color: #292929;
     overflow: hidden;
+}
+
+.highlight {
+    font-size: 13px;
 }
 
 header.post-header {
