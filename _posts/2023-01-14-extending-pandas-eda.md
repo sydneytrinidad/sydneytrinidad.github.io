@@ -2,7 +2,7 @@
 layout: post
 title:  Using pandas extensions to improve your EDA process
 date:   2023-01-14
-categories: ml pandas python
+tags: ml pandas python
 comments: true
 ---
 

@@ -1,19 +1,11 @@
 {% include header.html %}
 
 <body>
-<ul>
-  <div class="content">
-    <h1>{{ page.title }}</h1>
-    {% if page.date %}
-        <small><i>{{ page.date | date_to_string }}</i></small>
-    {% endif %}
-    {{ page.content }}
-  </div>
-</ul>
+{% include post/header.html %}
 <script src="/assets/js/prism.js"></script>
 <script id="dsq-count-scr" src="//sydneytrinidad.disqus.com/count.js" async></script>
 </body>
 
-{% include disqus.html %}
+{% include post/disqus.html %}
 
 {% include footer.html %}
