@@ -1,6 +1,7 @@
 ---
-layout: default
-title: Home
+title: "Blog Posts by Year"
+permalink: /
+layout: archive
+author_profile: true
+excerpt: These are Sydney's blog posts.
 ---
-
-Hi, this is my website. It is under construction. Come back soon.

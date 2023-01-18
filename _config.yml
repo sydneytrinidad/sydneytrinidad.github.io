@@ -14,6 +14,7 @@ plugins:
 
 include:
   - pages
+  - notes
 
 defaults:
   - scope:
@@ -32,6 +33,13 @@ defaults:
     values:
       layout: "default"
       permalink: /:basename/
+      author_profile: true
+  - scope:
+      path: "notes"
+      type: "pages"
+    values:
+      layout: "default"
+      permalink: /notes/
       author_profile: true
 
 disqus:
