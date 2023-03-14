@@ -7,6 +7,8 @@ domain: sydneytrinidad.github.io
 url: https://sydneytrinidad.github.io
 github_username: sydneytrinidad
 
+markdown: kramdown
+
 # Build settings
 theme: minima
 plugins:
