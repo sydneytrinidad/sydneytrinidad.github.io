@@ -6,12 +6,12 @@ tags: aws slack lambda sns cloudwatch webhook
 comments: true
 ---
 
-<img width="600" src="https://engineer-blog.ajike.co.jp/images/posts/20190321/1.png" class="center">
-<small class="center"><i>Image credit: https://ajike.github.io/lambda-to-slack/</i></small>
-
 Let's say you have a [Step Function](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) running on AWS, and this workflow has [CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) that notify you of successes, failures, and so forth. Generally speaking, CloudWatch alarms are set up with [Amazon SNS](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/US_SetupSNS.html) to send email notifications. This is done by subscribing to an SNS topic and setting up the topic to email specified recipients when the CloudWatch alarm changes state (in this case, a Step Function success or failure is considered a change of state).
 
 While I almost always recommend creating alarms for both successes and failures (if only because it helps you better monitor that your Step Function is actually running!), this also leads to inbox cluttering, especially as you increase the number of SNS topics that you are subscribed to.
+
+<img width="600" src="https://engineer-blog.ajike.co.jp/images/posts/20190321/1.png" class="center">
+<small class="center"><i>Image credit: https://ajike.github.io/lambda-to-slack/</i></small>
 
 As an alternative, you can receive these CloudWatch notifications via Slack channel. This has a few benefits, but the most notable one in my experience has been greater visibility. It is very easy to add other collaborators to a Slack channel, and it is generally easier to track alarm history on a Slack channel versus the CloudWatch user interface or an email inbox. A Slack message also has greater customization options for a more visually appealing experience; for example, you can use a different emoji for successes versus failures, and it is easier to notice the failures while logging the successes. We will add in an "emoji mapping" when we code up the Lambda function later on in the post.
 
